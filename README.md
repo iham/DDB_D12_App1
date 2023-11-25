@@ -55,12 +55,17 @@ Pfandgebinde Sammeln → Gebündelt Wegwerfen (KEINE EINZELABGABE) → Automat a
     - Gesammelte Gebinde
         - Aufteilung nach Typ
     - Letzte Abgabe
-    - *Score im Freundeskreis (FB)
-    - *CO2 gespart / Bäume gepflanzt / Spenden
-    - *score in der Region
+    - Weitere Ideen:
+        - *Score im Freundeskreis (FB)*
+        - *CO2 gespart / Bäume gepflanzt / Spenden*
+        - *score in der Region*
 
 - Scan Page
     - Nach Pfandabgabe QR vom Automaten zu scannen
 
 - Karte mit Abgabestellen
     - interaktive
+
+## Offline Verwendung
+- Plastikkarte mit QR Code für Menschen ohne Smartphone
+    - BenutzerIn wird im Hintergrund genauso verwaltet
