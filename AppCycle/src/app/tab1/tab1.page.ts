@@ -1,3 +1,4 @@
+import { PhotoService } from './../services/photo.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,7 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  
+  constructor(private photoService:PhotoService) {}
 
-  constructor() {}
+  addPhoto() {
+    console.log('add Photo');
+    this.photoService.takePicture();
+  }
 
 }
