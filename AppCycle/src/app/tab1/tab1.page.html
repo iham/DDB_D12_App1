@@ -14,9 +14,10 @@
   </ion-header>
   <ion-item>
     <ion-avatar slot="start">
-      <ion-button (click)="addPhoto()">
+      <ion-button (click)="addPhoto()" *ngIf="getProfileImage() === ''">
         <ion-icon name="camera"></ion-icon>
       </ion-button>
+      <img [src]="getProfileImage()" alt="UserIn" *ngIf="getProfileImage() !== ''" (click)="addPhoto()">
       <!-- <img src="https://placekitten.com/208" alt="Avatar"> -->
     </ion-avatar>
     <ion-label>

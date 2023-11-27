@@ -6,13 +6,20 @@ import { Component } from '@angular/core';
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss']
 })
+
 export class Tab1Page {
   
   constructor(private photoService:PhotoService) {}
 
-  addPhoto() {
-    console.log('add Photo');
-    this.photoService.takePicture();
+  getProfileImage() {
+    return localStorage.getItem('photo') ?? '';
   }
-
+  async addPhoto() {
+    console.log('add Photo');
+    await this.photoService.takePicture().then(photo => {
+      photo.subscribe(async photo => {
+        localStorage.setItem('photo', photo?.dataUrl ?? '');
+      })
+    });
+  }
 }
